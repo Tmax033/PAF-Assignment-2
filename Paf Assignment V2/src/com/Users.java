@@ -73,7 +73,7 @@ public class Users {
 				return "Error while connecting to the database for reading.";
 			}
 
-			output = "<table class='table' border='1'><tr class='thead-dark'><th > ID </th><th>First Name</th><th>Last Name </th><th>Email</th><th>NIC</th><th>Phone</th><th>Password</th><th>Update</th><th>Remove</th></tr>";
+			output = "<table style=\"width:100%\" ><tr class='thead-dark'><th > ID </th><th>First Name</th><th>Last Name </th><th>Email</th><th>NIC</th><th>Phone</th><th>Password</th><th>Update</th><th>Remove</th></tr>";
 
 			String query = "select * from user";
 			Statement stmt = con.createStatement();

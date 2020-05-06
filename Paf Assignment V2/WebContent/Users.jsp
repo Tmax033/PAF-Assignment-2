@@ -4,19 +4,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
 <script src="Component/jquery-3.2.1.min.js"></script>
 <script src="Component/Users.js"></script>
-<link rel="stylesheet"
-	href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-	integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-	crossorigin="anonymous">
 <meta charset="ISO-8859-1">
 <title>Users Page</title>
 </head>
 <body>
-
+		
 	<div class="container">
-		<form id="formUser" name="formUser" action="Users.jsp" method="post">
+		<form id="formUser" name="form-control"  action="Users.jsp" method="post">
 			<h2 class="text-center">
 				<b>Register</b>
 			</h2>
@@ -28,6 +28,7 @@
 			<div class="form-group has-error">
 				<input type="text" class="form-control" id="fName" name="fName"
 					placeholder="First Name" required="required">
+					
 			</div>
 			<div class="form-group has-error">
 				<input type="text" class="form-control" id="lName" name="lName"

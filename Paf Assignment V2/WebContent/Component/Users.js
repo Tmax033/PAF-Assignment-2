@@ -160,6 +160,11 @@ if ($("#password").val().trim() == "")
 {
 	return "Enter a Password.";
 }
+var pwdSize = /^(?=.*[a-z])(?=.*[A-Z]).{4,8}$/;
+var tmpPwd =  $("#password").val().trim();
+if(!tmpPwd.match(pwdSize)){
+	return "Insert a Password with 4 to 8 characters which contains Numerical value";
+}
 
 
 
