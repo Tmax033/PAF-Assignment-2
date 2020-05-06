@@ -39,7 +39,7 @@
 					<form id="formUser" name="form-control" action="Users.jsp"
 						method="post">
 						<br> <br>
-						<h2 class="text-center">User Management</h2>
+						<h2 class="text-center">User Management Page</h2>
 						<div class="form-group has-error">
 							<input type="text" class="form-control" id="userID" name=userID
 								placeholder="ID" required="required" disabled>

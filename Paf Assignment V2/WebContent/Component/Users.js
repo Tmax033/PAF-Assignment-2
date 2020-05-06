@@ -6,15 +6,15 @@ $(document).ready(function()
 	 }
 	 $("#alertError").hide();
 });
-// SAVE ============================================
+
 $(document).on("click", "#btnSave", function(event)
 		{
-		// Clear alerts---------------------
+		
 			 $("#alertSuccess").text("");
 			 $("#alertSuccess").hide();
 			 $("#alertError").text("");
 			 $("#alertError").hide();
-		// Form validation-------------------
+		
 				var status = validateUserForm();
 				if (status != true)
 				 {
@@ -24,7 +24,7 @@ $(document).on("click", "#btnSave", function(event)
 				 
 							return;
 				 }
-		//If valid
+		
 		var type = ($("#hidUserIDSave").val() == "") ? "POST" : "PUT";
 		$.ajax(
 				{
@@ -73,7 +73,7 @@ function onUserSaveComplete(response, status)
 			$("#formUser")[0].reset();
 }
 
-//UPDATE==========================================
+
 $(document).on("click", ".btnUpdate", function(event)
 {
 	 $("#hidUserIDSave").val($(this).closest("tr").find('#hidUserIDUpdate').val());
@@ -128,20 +128,20 @@ if (status == "success"){
 }
 
 
-// CLIENTMODEL=========================================================================
+
 function validateUserForm()
 {
-	// CODE
+	
 	if ($("#fName").val().trim() == "")
  {
 		return "Insert First Name.";
  }
-// NAME
+
 if ($("#lName").val().trim() == "")
  {
 	return "Insert Last Name.";
  } 
-//PRICE-------------------------------
+
 if ($("#email").val().trim() == "")
  {
 	return "Insert Email.";
@@ -150,7 +150,7 @@ if ($("#nic").val().trim() == "")
 {
 	return "Insert NIC Number.";
 }
-// is numerical value
+
 var phone = $("#phone").val().trim();
 if (!$.isNumeric(phone))
  {
